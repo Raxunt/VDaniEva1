@@ -3,6 +3,7 @@ package com.damdos.vivardaniel1eva;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -276,6 +277,7 @@ private String calc, res;
         });
 
         btnigual.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
                 if(resultadoOper && !calc.endsWith(" ")){
@@ -312,11 +314,27 @@ private String calc, res;
                     }
 
                     resultadoOper=false;
+
                     pantallaDos();
                     calc= res;
                     pantallaUno();
                     puntoInsert = true;
+                    if(calc.equals("NaN")){
+                        calcular.setText("");
+                        resultado.setText("No valido");
+                        calc="";
+                        puntoInsert = false;
+                        resultadoOper=false;
 
+                    }
+                    if(calc.equals("Infinity")){
+                        calcular.setText("");
+                        resultado.setText("Infinito");
+                        calc="";
+                        puntoInsert = false;
+                        resultadoOper=false;
+
+                    }
                 }
             }
         });
@@ -325,8 +343,11 @@ private String calc, res;
     public void pantallaUno(){
         calcular.setText(calc);
 
+
     }
     public void pantallaDos(){
+
+
         resultado.setText(res);
     }
 
