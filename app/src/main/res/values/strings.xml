@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">App DVC</string>
+    <string name="botonCalculadora">botonCalculadora</string>
+    <string name="nombreInicio">Daniel Vivar Castro</string>
+    <string name="imagenPrincipal">imagenPrincipal</string>
+    <string name="botonContacto">CONTACTO</string>
+    <string name="action_inicio">Inicio</string>
+    <string name="action_calculadora">Calculadora</string>
+    <string name="action_calculadora_img">Calculadora</string>
+    <string name="action_cuestionario">Cuestionario</string>
+    <string name="action_cuestionario_img">Cuestionario</string>
+
+    <string name="titulo">Titulo:</string>
+    <string name="correo">Correo electrónico:</string>
+    <string name="asunto">Asunto:</string>
+    <string name="puntuacion">Puntuación del 1 al 10:</string>
+    <string name="contenido">Contenido:</string>
+    <string name="botonenviar">ENVIAR</string>
+    <string name="contenidotitulo">Contacto</string>
+    <string name="contenidocorreo">asignaturamoviles@gmail.com</string>
+    <string name="contenidoasunto">Prioritario</string>
+    <string name="contenidocontenido">Escriba su contenido...</string>
+    <string name="resultadoPuntuacion">8/10 puntos.</string>
+
+    <string name="btn0">0</string>
+    <string name="btnpunto">.</string>
+    <string name="btnigual">=</string>
+    <string name="btn1">1</string>
+    <string name="btn2">2</string>
+    <string name="btn3">3</string>
+    <string name="btn4">4</string>
+    <string name="btn5">5</string>
+    <string name="btn6">6</string>
+    <string name="btn7">7</string>
+    <string name="btn8">8</string>
+    <string name="btn9">9</string>
+    <string name="btnmas">+</string>
+    <string name="btnmenos">-</string>
+    <string name="btnpor">X</string>
+    <string name="btndiv">/</string>
+    <string name="btninv">INV</string>
+    <string name="btnborrar">BORRAR</string>
+    <string name="pantallaresultado">0</string>
+    <string name="pantallaoperacion"></string>
+</resources>
