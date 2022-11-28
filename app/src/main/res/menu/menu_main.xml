@@ -8,18 +8,53 @@
         android:orderInCategory="100"
         android:icon="@drawable/inicio"
         app:showAsAction="always"
-        android:title="@string/action_inicio"/>
-    <item
-        android:id="@+id/action_calculadora"
+        android:title="@string/action_inicio"
+        />
+    <item android:id="@+id/action_calculadora"
         android:orderInCategory="300"
         app:showAsAction="never"
-        android:title="@string/action_calculadora"/>
+        android:title="@string/action_calculadora"></item>
+<item android:id="@+id/action_calculadora2"
+    android:orderInCategory="300"
+    app:showAsAction="never"
+    android:title="@string/action_calculadora">
+    <menu>
+        <item android:id="@+id/action_calculadora_micalculadora"
+            android:orderInCategory="100"
+            app:showAsAction="never"
+            android:title="@string/action_calculadora_micalculadora"></item>
+        <item android:id="@+id/action_calculadora_calculadoraonline"
+            android:orderInCategory="200"
+            app:showAsAction="never"
+            android:title="@string/action_calculadora_calculadoraonline"></item>
+    </menu>
+
+</item>
+
 
     <item
         android:id="@+id/action_cuestionario"
         android:orderInCategory="200"
         app:showAsAction="never"
         android:title="@string/action_cuestionario"/>
+
+
+    <item
+        android:id="@+id/action_cuestionario2"
+        android:orderInCategory="200"
+        app:showAsAction="never"
+        android:title="@string/action_cuestionario">
+        <menu>
+            <item android:id="@+id/action_cuestionario_gmail"
+                android:orderInCategory="100"
+                app:showAsAction="never"
+                android:title="@string/action_cuestionario_micuestionariogmail"></item>
+            <item android:id="@+id/action_cuestionario_mail"
+                android:orderInCategory="200"
+                app:showAsAction="never"
+                android:title="@string/action_cuestionario_cuestionariomail"></item>
+        </menu>
+    </item>
     <item
         android:id="@+id/action_calculadora_img"
         android:orderInCategory="300"

@@ -338,12 +338,11 @@
         android:backgroundTint="@color/grey"
         android:text="@string/btnborrar"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline21"
-        app:layout_constraintEnd_toStartOf="@+id/guideline16"
+        app:layout_constraintEnd_toStartOf="@+id/guideline13"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
-        app:layout_constraintTop_toTopOf="@+id/guideline22"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/guideline22" />
 
     <TextView
         android:id="@+id/pantallaresultado"
@@ -374,4 +373,17 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline15"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
         app:layout_constraintTop_toTopOf="@+id/guideline23" />
+
+    <Button
+        android:id="@+id/btnalcuadrado"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/btnalcuadrado"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline21"
+        app:layout_constraintEnd_toStartOf="@+id/guideline16"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toTopOf="@+id/guideline22" />
 </androidx.constraintlayout.widget.ConstraintLayout>

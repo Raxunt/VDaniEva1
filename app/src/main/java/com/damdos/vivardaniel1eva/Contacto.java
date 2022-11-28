@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -146,6 +147,36 @@ public class Contacto extends AppCompatActivity {
             ejecutar_cuestionario(null);
             return true;
         }
+        if (id==R.id.action_calculadora_micalculadora)
+        {
+            ejecutar_calculadora(null);
+            return true;
+        }
+
+        if (id==R.id.action_calculadora_calculadoraonline)
+        {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://web2.0calc.es/")));
+            return true;
+        }
+        if (id==R.id.action_cuestionario_mail)
+        {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://mail.google.com/mail/u/0/?hl=es#inbox")));
+            return true;
+        }
+
+
+
+        if (id==R.id.action_cuestionario_gmail)
+        {
+            ejecutar_cuestionario(null);
+            return true;
+        }
+
+
+
+
+
+
         if (id==R.id.action_inicio)
         {
             ejecutar_inicio(null);
@@ -153,4 +184,5 @@ public class Contacto extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(opcion_menu);
     }
+
 }

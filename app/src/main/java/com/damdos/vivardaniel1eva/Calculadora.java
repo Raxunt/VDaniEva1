@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -31,7 +32,7 @@ private String calc, res;
 
         puntoInsert= false;
         resultadoOper= false;
-
+        Button btnalcuadrado = findViewById(R.id.btnalcuadrado);
         Button btncero = findViewById(R.id.btncero);
         Button btnpunto = findViewById(R.id.btnpunto);
         Button btnigual = findViewById(R.id.btnigual);
@@ -50,6 +51,8 @@ private String calc, res;
         Button btnborrar = findViewById(R.id.btnborrar);
         Button btninv = findViewById(R.id.btninv);
         Button btndiv = findViewById(R.id.btndiv);
+
+
 
         btncero.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -252,7 +255,29 @@ private String calc, res;
             }
         });
 
-
+        btnalcuadrado.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(!resultado.getText().equals("0")) {
+                    if(res.equals("NaN")){
+                        borrar();
+                        pantallaUno();
+                        pantallaDos();
+                    }
+                    if(res.equals("Infinity")){
+                        borrar();
+                        pantallaUno();
+                        pantallaDos();
+                    }
+                    res = Double.toString(Double.parseDouble(res) * Double.parseDouble("2"));
+                    calc = res;
+                    resultadoOper=false;
+                    puntoInsert = true;
+                    pantallaDos();
+                    pantallaUno();
+                }
+        }
+});
         btninv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -362,6 +387,16 @@ private String calc, res;
     Función para invertir el String del resultado.
      */
     public void invertir(String res){
+        if(res.equals("NaN")){
+            borrar();
+            pantallaUno();
+            pantallaDos();
+        }
+        if(res.equals("Infinity")){
+            borrar();
+            pantallaUno();
+            pantallaDos();
+        }
         String reverse = new StringBuffer(res).reverse().toString();
         resultado.setText(reverse);
     }
@@ -423,6 +458,36 @@ private String calc, res;
             ejecutar_cuestionario(null);
             return true;
         }
+        if (id==R.id.action_calculadora_micalculadora)
+        {
+            ejecutar_calculadora(null);
+            return true;
+        }
+
+        if (id==R.id.action_calculadora_calculadoraonline)
+        {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://web2.0calc.es/")));
+            return true;
+        }
+        if (id==R.id.action_cuestionario_mail)
+        {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://mail.google.com/mail/u/0/?hl=es#inbox")));
+            return true;
+        }
+
+
+
+        if (id==R.id.action_cuestionario_gmail)
+        {
+            ejecutar_cuestionario(null);
+            return true;
+        }
+
+
+
+
+
+
         if (id==R.id.action_inicio)
         {
             ejecutar_inicio(null);

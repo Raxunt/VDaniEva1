@@ -9,6 +9,10 @@
     <string name="action_calculadora_img">Calculadora</string>
     <string name="action_cuestionario">Cuestionario</string>
     <string name="action_cuestionario_img">Cuestionario</string>
+    <string name="action_calculadora_micalculadora">Calculadora</string>
+    <string name="action_calculadora_calculadoraonline">Calculadora Online</string>
+    <string name="action_cuestionario_micuestionariogmail">Cuestionario Gmail</string>
+    <string name="action_cuestionario_cuestionariomail">Cuestionario Mail</string>
 
     <string name="titulo">Titulo:</string>
     <string name="correo">Correo electrónico:</string>
@@ -40,6 +44,7 @@
     <string name="btndiv">/</string>
     <string name="btninv">INV</string>
     <string name="btnborrar">BORRAR</string>
+    <string name="btnalcuadrado">^2</string>
     <string name="pantallaresultado">0</string>
     <string name="pantallaoperacion"></string>
 </resources>
