@@ -269,7 +269,7 @@ private String calc, res;
                         pantallaUno();
                         pantallaDos();
                     }
-                    res = Double.toString(Double.parseDouble(res) * Double.parseDouble("2"));
+                    res = Double.toString(Double.parseDouble(res) * Double.parseDouble(res));
                     calc = res;
                     resultadoOper=false;
                     puntoInsert = true;
